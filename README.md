@@ -83,14 +83,92 @@ For example, the Bar, CoffeeHouse, CarryAway, RestaurantLessThan20 and Restauran
 - 4-8: 3
 - gt8: 4
 
-#### Insights:
+### Data Analysis:
 - Of the total observations, 57% of the coupons were accepted by the user.
 - The coupon type with the highest count of coupons is Coffee House, followed by Restaurants(<20) ( Restaurants with average expense less than 20 $ per person)
 - The coupon types with the highest counts of accepted coupon are both Coffee House and Restaurants(<20)
 - Most observations had a temperature of 80.
 
-  ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot1.png)
+  ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot1.jpg)
 
+  ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot2.jpg)
+
+  ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot3.jpg)
+
+## Analysis of Bar type Coupons:
+In relation to total coupons, only 6.5% of Bar-type coupons were accepted. In relation to total accepted coupons, the acceptance grows to 11.5%
+
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot4.jpg)
+
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot5.jpg)
+
+
+#### In addition, some groups were created to investigate further the acceptance rates of Bar-type coupons. The groups are demonstrated below:
+- Drivers who went to a bar 3 or fewer times a month
+- Drivers who went to a bar 4 or more times a month
+- Drivers who go to a bar more than once a month and are over the age of 25
+- Drivers who go to bars more than once a month and had passengers who were not a kid and had occupations other than farming, fishing, or forestry
+- Drivers who go to bars more than once a month, had passengers that were not a kid and were not widowed
+- Drivers who go to bars more than once a month and are under the age of 30
+- Drivers who go to cheap restaurants more than 4 times a month and earn less than 50K.
+<sub> * Note: The analysis was conducted in relation to the total accepted Bar-type coupons. * <sub>
+
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot8.jpg)
+
+The group with the most significant acceptance rate is the drivers who went to a bar 3 or fewer times a month. This insight led to further analysis of the visit frequency in Accepted Bar-type coupons.
+
+#### Some additional insights:
+- Drivers who visit a bar more than once a month tend to accept the bar-type coupon. People who do not visit or visit a bar less than one time per month tend not to accept the bar-type coupon. To further investigate it, I will analyse how the time, passenger and destination affect the behaviour of the user.
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot9.jpg)
+- There is a slightly bigger frequency of accepted coupons for people who go to Bars 1 to 3 times per month in the morning hours (07:00, 10:00). In the afternoon (14:00), people who tend to accept bar-type coupons go to a bar less than once per month. The same pattern is noticed for the night hours.
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot10.jpg)
+- Drivers who go to their Home and tend to visit a bar less than once per month have a higher frequency of accepted coupons than drivers who go to their Home and have other visit frequencies to a bar.
+- In addition, drivers with no urgent destination, whose bar visit frequencies are less than once per month and one to three visits per month, tend to have a high frequency of accepted coupons.
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot11.jpg)
+- Drivers alone in the car whose bar visit frequency is less than once per month or one to three times, have a higher frequency of accepted coupons.
+- Drivers with friends in the car whose bar visit frequency is one to three times have a higher frequency of accepted coupons.
+- Drivers with their partner in the car whose bar visit frequency is less than once per month have a higher frequency of accepted coupons.
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot12.jpg)
+
+
+## Analysis of Restaurant (<20) type Coupons:
+
+- The proportion of the restaurants with an average expense of less than 20 $ coupons that were accepted (in relation to total Coupons): 15.64%
+- The proportion of the restaurants with an average expense of less than 20 $ coupons that were accepted (in relation to total Accepted Coupons): 27.52%
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot13.jpg)
+
+### Additional insights - Investigating the variables of temperature and time subjected to drivers' acceptance behaviour (in relation to accepted coupons):
+- It seems that more people accept the coupons in higher temperatures (80).
+- Also, on hot days, the time with the most significant count of accepted coupons for cheap restaurants is 18:00.
+- For the days when the temperature is 55, the highest counts are in the morning (07:00) and at 14:00.
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot14.jpg)
+
+
+### Additional insights - Investigating the variables of passenger and time subjected to drivers' acceptance behaviour (accepted coupons):
+- Users who are Alone or with Friends have higher frequencies of accepted coupons for cheap restaurants.
+- In particular, users who drive Alone have a high frequency of accepted coupons in the early morning hours (07:00) 
+- In addition, users who drive with Friends have a high frequency of accepted coupons for 18:00.
+- Both of the above classes/groups also have a high frequency of accepted coupons at 14:00.
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot15.jpg)
+
+### Additional insights - Investigating the variables of passenger and restaurant visit frequency (Restaurant(<20) subjected to drivers' acceptance behaviour (accepted coupons)):
+- Users tend to accept the restaurant coupons when their restaurant visit frequency is 1-3 times, followed by 4-8 times.
+![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot16.jpg)
+
+
+
+
+## Next steps and Recommendations
+This dataset is analysed and is ready to be inserted into a predictive model. Of course, more sophisticated data transformations could be implemented in order to make it even more "understandable" by an ML model.
+
+According to the analysis conducted, the features that should be used as inputs to an ML model are:    
+- The Bar and Restaurant(<20) visit frequency
+- The Temperature
+- The time of the day the coupon was sent 
+- The destination
+- And probably the passenger type.
+
+To additionally validate the decision to choose the above feature, further analysis should be conducted between other features such as: Occupation, type of coupon and visit frequency in expensive restaurants. Also, an analysis of income and visit frequencies in various places could be conducted.
 
 
 
