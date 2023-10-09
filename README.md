@@ -1,7 +1,7 @@
 # Coupon Acceptance EDA - Practical Application
 UC Berkeley Professional Certificate in ML and AI
 
-
+* For the notebook click [here](https://github.com/vtsou359/CouponAcceptance/blob/main/Coupon_Acceptance_EDA.ipynb)
 
 
 ## Description of the Dataset
@@ -48,7 +48,48 @@ The attributes of this data set include:
 
 
 
-## Data Analysis
+## Data Preparation for the Analysis
+
+#### The data frame contains:
+- 12684 rows in the dataset
+- 26 features in the dataset
+
+#### The data were cleaned appropriately:
+The rows that contained duplicates (74 rows) were dropped. 
+The rows that contained missing values (603 rows) were dropped.
+The feature/column car was dropped as it was problematic.
+
+#### Transformations of values were implemented in the following features:
+- destination
+- passenger
+- weather
+- time
+- gender
+- age
+- maritalStatus
+- expiration
+- education
+- income
+- Bar
+- CoffeeHouse
+- CarryAway
+- RestaurantLessThan20
+- Restaurant20To50
+
+For example, the Bar, CoffeeHouse, CarryAway, RestaurantLessThan20 and Restaurant20To50 columns were transformed as:
+- never: 0
+- less1: 1
+- 1-3: 2
+- 4-8: 3
+- gt8: 4
+
+#### Insights:
+- Of the total observations, 57% of the coupons were accepted by the user.
+- The coupon type with the highest count of coupons is Coffee House, followed by Restaurants(<20) ( Restaurants with average expense less than 20 $ per person)
+- The coupon types with the highest counts of accepted coupon are both Coffee House and Restaurants(<20)
+- Most observations had a temperature of 80.
+
+  ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot1.png)
 
 
 
