@@ -48,7 +48,7 @@ The attributes of this data set include:
 
 
 
-## Data Preparation for the Analysis
+## Data Quality checks, Data Cleansing, Data Transformations and initial Data Analysis
 
 #### The data frame contains:
 - 12684 rows in the dataset
@@ -95,7 +95,7 @@ For example, the Bar, CoffeeHouse, CarryAway, RestaurantLessThan20 and Restauran
 
   ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot3.jpg)
 
-## Analysis of Bar type Coupons:
+## Data Analysis Results for Coupons of type Bar:
 In relation to total coupons, only 6.5% of Bar-type coupons were accepted. In relation to total accepted coupons, the acceptance grows to 11.5%
 
 ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot4.jpg)
@@ -131,27 +131,27 @@ The group with the most significant acceptance rate is the drivers who went to a
 ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot12.jpg)
 
 
-## Analysis of Restaurant (<20) type Coupons:
+## Data Analysis Results for Coupons of type Restaurant (<20):
 
 - The proportion of the restaurants with an average expense of less than 20 $ coupons that were accepted (in relation to total Coupons): 15.64%
 - The proportion of the restaurants with an average expense of less than 20 $ coupons that were accepted (in relation to total Accepted Coupons): 27.52%
 ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot13.jpg)
 
-### Additional insights - Investigating the variables of temperature and time subjected to drivers' acceptance behaviour (in relation to accepted coupons):
+#### Additional insights - Investigating the variables of temperature and time subjected to drivers' acceptance behaviour (in relation to accepted coupons):
 - It seems that more people accept the coupons in higher temperatures (80).
 - Also, on hot days, the time with the most significant count of accepted coupons for cheap restaurants is 18:00.
 - For the days when the temperature is 55, the highest counts are in the morning (07:00) and at 14:00.
 ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot14.jpg)
 
 
-### Additional insights - Investigating the variables of passenger and time subjected to drivers' acceptance behaviour (accepted coupons):
+#### Additional insights - Investigating the variables of passenger and time subjected to drivers' acceptance behaviour (accepted coupons):
 - Users who are Alone or with Friends have higher frequencies of accepted coupons for cheap restaurants.
 - In particular, users who drive Alone have a high frequency of accepted coupons in the early morning hours (07:00) 
 - In addition, users who drive with Friends have a high frequency of accepted coupons for 18:00.
 - Both of the above classes/groups also have a high frequency of accepted coupons at 14:00.
 ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot15.jpg)
 
-### Additional insights - Investigating the variables of passenger and restaurant visit frequency (Restaurant(<20) subjected to drivers' acceptance behaviour (accepted coupons)):
+#### Additional insights - Investigating the variables of passenger and restaurant visit frequency (Restaurant(<20) subjected to drivers' acceptance behaviour (accepted coupons)):
 - Users tend to accept the restaurant coupons when their restaurant visit frequency is 1-3 times, followed by 4-8 times.
 ![Alt text](https://github.com/vtsou359/CouponAcceptance/blob/main/plots/Plot16.jpg)
 
