@@ -1,5 +1,5 @@
 # Coupon Acceptance EDA - Practical Application
-UC Berkeley Professional Certificate in ML and AI
+Advanced Data Analysis Project
 
 * For the notebook click [here](https://github.com/vtsou359/CouponAcceptance/blob/main/Coupon_Acceptance_EDA.ipynb)
 
